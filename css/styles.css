@@ -1,23 +1,60 @@
-
 /** INDEX PAGE  **/
 
 body {
     background-color: #FFA41B;
     color: #000839;
+    font-family: 'Ubuntu', sans-serif;
+
 }
+
+
+
+/** NAVBAR **/
+.navbar {
+    padding: 2rem 6rem 2rem 6rem;
+    font-size: 1.5rem;
+}
+
+
+.navbar-brand {
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+}
+
+
+/** NAVBAR-END **/
+
 
 
 /** intro section **/
 
+#intro-section {
+    padding: 4rem;
+}
 
 
+#intro-section .row {
+    padding: 4rem 8rem 7rem 8rem;
+}
+
+.intro-para {
+    padding-right: 15rem;
+}
 
 
+.intro-para h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 6rem;
+}
 
 
+.intro-para p {
+    font-size: 2rem;
+}
 
 
 /** intro section end **/
+
 
 
 /** section-2  **/
@@ -31,6 +68,7 @@ body {
 
 
 /** section-2 end **/
+
 
 
 /** section-3  **/
