@@ -1,19 +1,33 @@
-/** INDEX PAGE  **/
+/*
+    Palette
+    #7d4f50;
+    #fff3f3
+    #ff1654
+    #fff07c
+    */
 
+/** INDEX PAGE  **/
+*{
+    max-width: 100%;
+}
 body {
-    background-color: #e9e9e9;
-    color: #494949;
+    background-color: #7d4f50;
+    color: #ffffff;
     font-family: 'Esteban';
 
 }
-
-
+button{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 
 /** NAVBAR **/
+
 .navbar {
     padding: 2rem 6rem 2rem 6rem;
-    font-size: 1.5rem;
-    background-color:#ffd000;
+    font-size: 1.75rem;
+   /* background-color: #2a324b;*/
+    background-color: #fff3f3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 
@@ -21,14 +35,19 @@ body {
     font-size: 5rem;
     font-family: 'Rouge Script';
 }
-
+.navbar-default .navbar-nav a{
+    color:#ff1654;
+}
+.navbar-default a{
+     /*color: #ffefd3;*/
+     color: #ff1654;
+ }
 
 /** NAVBAR-END **/
 
 
 
 /** intro section **/
-
 
 #intro-section {
     padding: 4rem;
@@ -41,7 +60,7 @@ body {
 
 
 .intro-para {
-    padding-right: 15rem;
+    padding-right: 10rem;
 }
 
 
@@ -54,15 +73,14 @@ body {
 .intro-para p {
     font-size: 1.75rem;
 }
-.tagline{
-    color: #ffd000;
+.intro-para .tagline{
+    font-family: 'Rouge Script';
+    /*color: #e4c1f9;*/
+    color: #fff07c;
 }
 
 /** intro section end **/
 
-button{
-    background-color: #ffd000;
-}
 
 /** section-2  **/
 
@@ -75,17 +93,19 @@ button{
 }
 .features-para{
     padding-top: 3em;
-    padding-left: 2em;
-    font-size: 1.75em;
+    padding-left: 5em;
+    font-size: 1.5em;
     /*background-color: #ffd000;*/
 }
-
+.features-para .tagline{
+    color: #fff07c;
+    padding-bottom: 0.5em;
+    font-family: 'Rouge Script';
+    font-size: 1.7em;
+}
 .scooter{
     padding: 2em 2em;
 }
-
-
-
 
 
 
