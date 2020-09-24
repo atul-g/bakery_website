@@ -61,6 +61,7 @@ button{
 
 .intro-para {
     padding-right: 10rem;
+    padding-top: 5rem;
 }
 
 
@@ -96,7 +97,7 @@ button{
 
 
 .features-para{
-    padding-top: 3em;
+    padding-top: 8rem;
     padding-left: 5em;
     font-size: 1.5em;
     /*background-color: #ffd000;*/
@@ -119,6 +120,22 @@ button{
 
 /** section-2 end **/
 
+
+/** adding float animations for svgs (experimental) **/
+.float {
+  -webkit-animation-name: Floating;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes Floating{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 50px);}
+    to {-webkit-transform: translate(0, -0px);    }
+}
+
+/** floating svg animation - end **/
 
 
 /** section-3  **/
