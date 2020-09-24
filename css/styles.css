@@ -87,22 +87,30 @@ button{
 #feature-section{
     padding: 4em;
 }
+
+
 #features-section .row{
     padding: 4rem 8rem 7rem 8rem;
 
 }
+
+
 .features-para{
     padding-top: 3em;
     padding-left: 5em;
     font-size: 1.5em;
     /*background-color: #ffd000;*/
 }
+
+
 .features-para .tagline{
     color: #fff07c;
     padding-bottom: 0.5em;
     font-family: 'Rouge Script';
     font-size: 1.7em;
 }
+
+
 .scooter{
     padding: 2em 2em;
 }
@@ -114,6 +122,9 @@ button{
 
 
 /** section-3  **/
+.carousel {
+    padding-bottom: 6rem;
+}
 
 #carousel .carousel-item {
   height: 70vh;
@@ -130,7 +141,6 @@ button{
 
 #carousel .carousel-item .caption {
   background-color: rgba(0, 0, 0, 0);
-  padding: 100px;
   color: white;
   animation-duration: 1s;
   animation-delay: 2s;
@@ -174,6 +184,8 @@ button{
 
 .caption {
     text-align: center;
+    font-family: 'Rouge Script';
+    font-size: 3rem;
 }
 
 
