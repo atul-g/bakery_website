@@ -159,4 +159,27 @@ button{
 
 /** section-3 end **/
 
+
+/** footer-section **/
+.page-footer {
+    background-color: #fff3f3;
+    color: #ff1654;
+}
+
+
+.list-inline-item {
+    padding: 1rem;
+}
+
+
+.caption {
+    text-align: center;
+}
+
+
+.fab {
+    color: pink;
+}
+/** footer end **/
+
 /** INDEX PAGE END **/
