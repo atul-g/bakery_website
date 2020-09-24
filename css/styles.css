@@ -115,13 +115,47 @@ button{
 
 /** section-3  **/
 
+#carousel .carousel-item {
+  height: 70vh;
+  width: 100%;
+  min-height: 20px;
+  background: no-repeat center center scroll;
+  }
 
+#carousel .carousel-inner .carousel-item {
+  transition: -webkit-transform 2s ease;
+  transition: transform 2s ease;
+  transition: transform 2s ease, -webkit-transform 2s ease;
+}
 
+#carousel .carousel-item .caption {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 100px;
+  color: white;
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
 
+#carousel .container{
+ width: 50 px;
+ position: absolute;
+   left: 35%;
+}
 
+#carousel .caption h2 {
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
 
+#carousel .caption p {
+  animation-duration: 1s;
+  animation-delay: 2.2s;
+}
 
-
+#carousel .caption a {
+  animation-duration: 1s;
+  animation-delay: 2.4s;
+}
 
 /** section-3 end **/
 
