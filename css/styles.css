@@ -1,9 +1,10 @@
 /*
     Palette
-    #7d4f50;
-    #fff3f3
-    #ff1654
-    #fff07c
+    #7d4f50; --> main BG-colour
+    #6e4546 --> darker shade of BG
+    #fff3f3 --> header/footer
+    #ff1654 --> pink-ish
+    #fff07c --> yellow-tagline
     */
 
 /** INDEX PAGE  **/
@@ -16,10 +17,33 @@ body {
     font-family: 'Esteban';
 
 }
-button{
+#body-info{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+.modal-content{
+    background-color: #fff3f3;
+    color: #7d4f50;
+}
+.close{
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+    .close:hover, .close:focus {
+         color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
 
+.modal-btn{
+    font-size: 1.3em;
+    padding: 0.5em 2em;
+    margin-right: 2em;
+}
+.modal-footer{
+    margin-right: 10em;
+}
 /** NAVBAR **/
 
 .navbar {
@@ -62,6 +86,7 @@ button{
 .intro-para {
     padding-right: 10rem;
     padding-top: 5rem;
+    
 }
 
 
@@ -78,8 +103,12 @@ button{
     font-family: 'Rouge Script';
     /*color: #e4c1f9;*/
     color: #fff07c;
+   
 }
 
+form{
+    padding: 3em;
+}
 /** intro section end **/
 
 
@@ -95,20 +124,24 @@ button{
 
 }
 
-
 .features-para{
-    padding-top: 8rem;
+    padding-top: 6rem;
     padding-left: 5em;
     font-size: 1.5em;
-    /*background-color: #ffd000;*/
 }
 
+.features-para ul{
+    padding-bottom: 1em;
+}
+#features-section li{
+  padding: 0.75em;
+}
 
 .features-para .tagline{
     color: #fff07c;
-    padding-bottom: 0.5em;
     font-family: 'Rouge Script';
-    font-size: 1.7em;
+    font-size: 2em;
+    padding-bottom:0.5em;
 }
 
 
@@ -141,6 +174,7 @@ button{
 /** section-3  **/
 .carousel {
     padding-bottom: 6rem;
+    /*background-color: #6e4546;*/
 }
 
 #carousel .carousel-item {
@@ -184,31 +218,52 @@ button{
   animation-delay: 2.4s;
 }
 
-/** section-3 end **/
-
-
-/** footer-section **/
-.page-footer {
-    background-color: #fff3f3;
-    color: #ff1654;
-}
-
-
-.list-inline-item {
-    padding: 1rem;
-}
-
-
 .caption {
     text-align: center;
     font-family: 'Rouge Script';
     font-size: 3rem;
+    
+}
+.user{
+    font-family: 'Esteban';
+    font-size: x-large;
+}
+.review{
+    color: #fff07c;
+}
+
+#carousel .carousel-item.active{
+    background-image: url("images/flower.svg");
+}
+#carousel .carousel-item.sea{
+    background-image: url("images/flower.svg");
+}
+#carousel .carousel-item.river{
+    background-image: url("images/flower.svg");
+}
+/** section-3 end **/
+
+
+/** footer-section **/
+
+.page-footer {
+    background-color: #fff3f3;
+    color: #7d4f50;
 }
 
 
+.list-inline-item {
+    padding: 2em;
+}
+
 .fab {
-    color: pink;
+    color: #ff1654;
+}
+.fas{
+    color: #fff07c;
 }
 /** footer end **/
 
 /** INDEX PAGE END **/
+
+

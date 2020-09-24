@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
         <!-- JS, Popper.js, and jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"</s    cript>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
@@ -33,7 +33,7 @@
     <body>
         <!-- NAVBAR -->
 
-        <nav class="navbar navbar-expand-lg navbar-default"> 
+        <nav class="navbar navbar-expand-lg navbar-default" style="background-image: url(images/nav-bg.jpg);"> 
             <a class="navbar-brand" href="">Whisked</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo">
                 <span class="navbar-toggler-icon"></span>
@@ -55,22 +55,58 @@
 
         <!-- NAVBAR -->
 
-        <section id="intro-section">
+        <section id="intro-section" style="background-image: url(images/flower-bg.jpg);">
             <div class="row">
                 <div class="col-md-7 intro-para">
                     <h1 class="tagline"> 'Happiness is homemade' </h1>
                     <br>
-                    <p>Pick up your whisk and start baking.<br>Sell or buy delicious confectionaries baked at home. We've got your back ;)</p>
+                    <p>Pick up your whisk and start baking.<br>Sell or buy delicious confectionaries baked at home with warmth. ;)</p>
 
                     <br>
-                    <button type="button" class="btn btn-lg btn-light">Visit Store</button> &nbsp; &nbsp;
-                    <button type="button" class="btn btn-lg btn-light">&nbsp; &nbsp; &nbsp; &nbsp;Sell&nbsp; &nbsp; &nbsp; &nbsp;</button>
+                    <button type="button"id="body-info" class="btn btn-lg btn-light" data-toggle="modal" data-target="#storeInfoModal">Visit Store</button> &nbsp; &nbsp;
+                    <button type="button" id="body-info" class="btn btn-lg btn-light" data-toggle="modal" data-target="#storeInfoModal">&nbsp; &nbsp; &nbsp; &nbsp;Sell&nbsp; &nbsp; &nbsp; &nbsp;</button>
 
                 </div>
                 <img class="col-md-5 intro-food float" src="images/intro-food.svg" alt="food">
             </div>
         </section>
 
+        <!-- MODAL -->
+       <div class="modal fade" id="storeInfoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="exampleModalLabel">&nbsp; &nbsp;&nbsp;Welcome to Whisked</h1>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/modal-header.jpg">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                    placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Forgot Password?</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-info modal-btn" data-dismiss="modal">Log In</button>
+                        <button type="button" class="btn btn-info modal-btn">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <section id="features-section">
@@ -81,14 +117,25 @@
 
                 <div class="col-md-7 features-para rounded">
                     <h1 class="tagline">Why Whisked?</h4>
-                    <p class="one">Got some delicious dessert baking in the oven, and want others to taste? Join our website as seller.</p>
+                    <ul class="list-unstyled list-inline">
+                        <li>
+                            <i class="fas fa-handshake fa-1x"></i>&nbsp;&nbsp;Got some delicious dessert baking in the oven, and want others to taste?Join our website as seller.
+                        </li>
+                        <li>
+                            <i class="fas fa-cheese fa-1x"></i>&nbsp;&nbsp;Locate nearest bakery and get ready to dig into delicious confectionaries.
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-1x"></i>&nbsp;&nbsp;We make sure that your dessert reach your doorstep.
+                        </li>
+                    </ul>
+                    <!--<p class="one"><i class="far fa-handshake fa-2x"></i>Got some delicious dessert baking in the oven, and want others to taste? Join our website as seller.</p>
                     <br>
                     <p class="two">Locate nearest bakery and get ready to dig into delicious confectionaries.</p>
                     <br>
                     <p class="three">We make sure that your dessert reach your doorstep.</p>
-                    <br>
+                    <br>-->
 
-                    <button type="button" class="btn btn-lg btn-light">Learn More</button> &nbsp; &nbsp;
+                    <button type="button" id="body-info" class="btn btn-lg btn-light">Learn More</button> &nbsp; &nbsp;
 
 
                 </div>
@@ -96,7 +143,7 @@
         </section>
 
 
-        <section id="section-3">
+        <section id="section-3" style="background-image: url(images/flower.jpg);">
 
             <div id="carousel" class="carousel slide hero-slides" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -111,8 +158,8 @@
                             <div class="row align-items-center h-100">
                                 <div class="col-12 col-md-10 col-lg-7 col-xl-6">
                                     <div class="caption animated fadeIn">
-                                        <p>"I'm a regular customer. The people in here aren't business minded. They are here to make others taste their wonderful delicacies prepared with love. And that's what makes Whisked so good."</p>
-                                        <p >-Kylie Jenner</p>
+                                        <p class="review">"I'm a regular customer. The people in here aren't business minded. They are here to make others taste their wonderful delicacies prepared with love. And that's what makes Whisked so good."</p>
+                                        <p class="user">-Kylie Jenner</p>
                                     </div>
                                 </div>
                             </div>
@@ -123,8 +170,8 @@
                             <div class="row align-items-center h-100">
                                 <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                                     <div class="caption animated fadeIn">
-                                        <p>"A wonderful platform for everyone who wish they could reach out with their delicacies."</p>
-                                        <p >- Anonymous</p>
+                                        <p class="review">"A wonderful platform for everyone who wish they could reach out with their delicacies."</p>
+                                        <p class="user">- Anonymous</p>
                                     </div>
                                 </div>
                             </div>
@@ -135,8 +182,8 @@
                             <div class="row align-items-center h-100">
                                 <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                                     <div class="caption animated fadeIn">
-                                        <p>"I'm in love with Whisked. I get to order tasty homemade cakes, and also sell some of my own recipes."</p>
-                                        <p >-John Legend</p>
+                                        <p class="review">"I'm in love with Whisked. I get to order tasty homemade cakes, and also sell some of my own recipes."</p>
+                                        <p class="user">-Adolf Hiler</p>
                                     </div>
                                 </div>
                             </div>
@@ -165,18 +212,23 @@
                 <!-- Social buttons -->
                 <ul class="list-unstyled list-inline text-center">
                     <li class="list-inline-item">
-                        <a class="btn-floating btn-fb mx-1">
-                            <i class="fab fa-facebook-f fa-3x"> </i>
+                        <a href="#" class="btn-floating btn-fb mx-1">
+                            <i class="fab fa-facebook-f fa-2x"> </i>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="btn-floating btn-tw mx-1">
-                            <i class="fab fa-twitter fa-3x"> </i>
+                        <a href="#" class="btn-floating btn-tw mx-1">
+                            <i class="fab fa-twitter fa-2x"> </i>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="btn-floating btn-gplus mx-1">
-                            <i class="fab fa-google-plus-g fa-3x"> </i>
+                        <a href="#" class="btn-floating btn-gplus mx-1">
+                            <i class="fab fa-google-plus-g fa-2x"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="btn-floating btn-gplus mx-1">
+                            <i class="fab fa-instagram fa-2x"></i>
                         </a>
                     </li>
                 </ul>
@@ -186,7 +238,7 @@
             <!-- Footer Elements -->
 
             <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2020 Copyright: Whisked</div>
+            <div class="footer-copyright text-center py-3">&copy; 2020 Copyright: Whisked</div>
             <!-- Copyright -->
 
         </footer>
