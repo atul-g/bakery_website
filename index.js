@@ -3,33 +3,43 @@
 currentYear = new Date().getFullYear();
 document.getElementsByClassName('footer-copyright')[0].innerText =  "© " + currentYear + " Copyright: Whisked"
 
+
+const $introSection = $("#intro-section");
+let introVisible = $introSection.is(":visible");
+
+const $featuresSection = $("#features-section");
+let featuresVisible = $featuresSection.is(":visible");
+
+const $section3 = $("#section-3");
+let section3Visible = $section3.is(":visible");
+
+
 $(document).scroll(function() {
-    var  y = $(this).scrollTop();
+    const y = $(this).scrollTop();
     console.log(y);
 
-    //if(y > 400) {
-    //    var display = $("#intro-section").css('display');
-    //    $("#intro-section").fadeOut(500, function() {
-    //        $("#intro-section").css('visibility', 'hidden');
-    //        $("#intro-section").css('display', display);
-    //    });
-    //}
-    //else {
-    //    var display = $("#intro-section").css('display');
-    //    $("#intro-section").fadeIn(500, function() {
-    //        $("#intro-section").css('visibility', 'hidden');
-    //        $("#intro-section").css('display', display);
-    //    });
-    //}
-    //    if(y > 600) {
-    //        $('.intro-para').fadeOut()
-    //    }
-    //    else {
-    //        $('#intro-section').fadeIn()
-    //    }
+    if (!(y <= 400 == introVisible))  { //this also means:  if not (y <= 400 && introVisible || y > 400 && !introVisible) return;
 
+        introVisible = !introVisible;
+        const opacity = +introVisible;
+        $introSection.fadeTo(400, opacity);
+    }
+
+
+    if (!(y > 400 == featuresVisible))  { 
+
+        featuresVisible = !featuresVisible;
+        const opacity = +featuresVisible;
+        $featuresSection.fadeTo(400, opacity);
+    }
+
+    if (!(y > 1200 == section3Visible))  { 
+
+        section3Visible= !section3Visible;
+        const opacity = +section3Visible;
+        $section3.fadeTo(400, opacity);
+    }
 });
-
 
 
 /**
@@ -37,7 +47,7 @@ $(document).scroll(function() {
  * 
  * 
 
-// Get the modal
+    // Get the modal
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
@@ -62,4 +72,4 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
- */
+*/

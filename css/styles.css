@@ -75,6 +75,7 @@ body {
 
 #intro-section {
     padding: 4rem;
+    background-image: url('../images/flower-bg.jpg');
 }
 
 
@@ -172,6 +173,10 @@ form{
 
 
 /** section-3  **/
+#section-3 {
+    background-image: url('../images/flower.jpg');
+}
+
 .carousel {
     padding-bottom: 6rem;
     /*background-color: #6e4546;*/
@@ -232,15 +237,6 @@ form{
     color: #fff07c;
 }
 
-#carousel .carousel-item.active{
-    background-image: url("images/flower.svg");
-}
-#carousel .carousel-item.sea{
-    background-image: url("images/flower.svg");
-}
-#carousel .carousel-item.river{
-    background-image: url("images/flower.svg");
-}
 /** section-3 end **/
 
 
