@@ -1,0 +1,45 @@
+/** NAVBAR **/
+
+.navbar {
+    padding: 2rem 6rem 2rem 6rem;
+    font-size: 1.75rem;
+    /* background-color: #2a324b;*/
+    background-color: #fff3f3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.navbar-brand {
+    font-size: 5rem;
+    font-family: 'Rouge Script';
+}
+.navbar-default .navbar-nav a{
+    color:#ff1654;
+}
+.navbar-default a{
+    /*color: #ffefd3;*/
+    color: #ff1654;
+}
+
+/** NAVBAR-END **/
+
+
+/** footer-section **/
+
+.page-footer {
+    background-color: #fff3f3;
+    color: #7d4f50;
+}
+
+
+.list-inline-item {
+    padding: 2em;
+}
+
+.fab {
+    color: #ff1654;
+}
+.fas{
+    color: #fff07c;
+}
+/** footer end **/

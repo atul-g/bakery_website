@@ -16,7 +16,7 @@ let section3Visible = $section3.is(":visible");
 
 $(document).scroll(function() {
     const y = $(this).scrollTop();
-    console.log(y);
+    //console.log(y);
 
     if (!(y <= 400 == introVisible))  { //this also means:  if not (y <= 400 && introVisible || y > 400 && !introVisible) return;
 
