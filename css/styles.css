@@ -11,6 +11,7 @@
 *{
     max-width: 100%;
 }
+
 body {
     background-color: #7d4f50;
     color: #ffffff;
@@ -217,3 +218,42 @@ form{
 
 
 /** INDEX PAGE END **/
+
+
+/** STORES PAGE **/
+
+/* CAROUSEL */
+#sales-carousel{
+    padding: 5em;
+    background-color: #6e4546;
+}
+#sales-carousel .carousel-inner img{
+    padding: 3em;
+}
+
+
+
+/*ITEMS CARDS*/
+#items-card{
+    background-image: url('../images/flower.jpg');
+}
+.item-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 4em 9em 4em 9em
+}
+.card{
+   width: 18rem;
+   justify-content: center;
+
+   margin: 2em;
+   margin-left: 5em;
+}
+.card-img-top{
+    height: 20em;
+    width: 18em;
+}
+.card .card-body {
+    color: #7d4f50;
+    /* border: 2px solid #000;*/
+}
