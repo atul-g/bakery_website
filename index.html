@@ -47,8 +47,8 @@
                     <p>Pick up your whisk and start baking.<br>Sell or buy delicious confectionaries baked at home with warmth. ;)</p>
 
                     <br>
-                    <button type="button"id="body-info" class="btn btn-lg btn-light" data-toggle="modal" data-target="#storeInfoModal">Visit Store</button> &nbsp; &nbsp;
-                    <button type="button" id="body-info" class="btn btn-lg btn-light" data-toggle="modal" data-target="#storeInfoModal">&nbsp; &nbsp; &nbsp; &nbsp;Sell&nbsp; &nbsp; &nbsp; &nbsp;</button>
+                    <button type="button"id="body-info" class="btn btn-lg btn-light" data-toggle="modal" data-target="#LoginModal">Visit Store</button> &nbsp; &nbsp;
+                    <button type="button" id="body-info" class="btn btn-lg btn-light" data-toggle="modal" data-target="#LoginModal">&nbsp; &nbsp; &nbsp; &nbsp;Sell&nbsp; &nbsp; &nbsp; &nbsp;</button>
 
                 </div>
                 <img class="col-md-5 intro-food float" src="images/intro-food.svg" alt="food">
@@ -56,44 +56,57 @@
         </section>
 
         <!-- MODAL -->
-        <div class="modal fade" id="storeInfoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                                                                                 aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title" id="exampleModalLabel">&nbsp; &nbsp;&nbsp;Welcome to Whisked</h1>
+                        <h1 class="modal-title" id="modalLabel">&nbsp; &nbsp;&nbsp;Welcome to Whisked</h1>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
+                    
                     <div class="modal-body">
                         <img src="images/modal-header.jpg">
-                        <form>
+                        
+                        <!--<div class="error-login" id="error"></div>-->
+                        <form id="form" class="login-form" action="stores.html">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                                                                                 placeholder="Enter email">
+                                <label for="InputEmail">Email address</label>
+                                <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp" placeholder="Enter E-mail Address">
+                                <i class="fas fa-check-circle fa-1x"></i>
+                                <i class="fas fa-exclamation-circle fa-1x"></i>
+                                <small id="error">"Error Message"</small>
                             </div>
+                            
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                <label for="InputPassword">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                                <i class="fas fa-check-circle fa-1x"></i>
+                                <i class="fas fa-exclamation-circle fa-1x"></i>
+                                <small id="error">"Error Message"</small>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Forgot Password?</label>
+                                <input type="checkbox" class="form-check-input" id="check">
+                                <label class="form-check-label" for="Check">Forgot Password?</label>
                             </div>
+                            <div class="form-group  d-flex justify-content-center">
+                                <button type="submit" class="btn btn-info modal-btn">Log In</button>
+                            </div>
+                            <a href="stores.html" class="btn btn-info modal-btn">Temp link to store</a>
                         </form>
                     </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-info modal-btn" data-dismiss="modal">Log In</button>
+                     <div class="modal-footer d-flex justify-content-around">
+                         <h4 class="sign-upr">or,&nbsp;&nbsp;&nbsp;&nbsp; First time at Wisked?</h4>
                         <button type="button" class="btn btn-info modal-btn">Sign Up</button>
-                    </div>
+                     </div>
                 </div>
             </div>
         </div>
 
 
-        <section id="features-section">
+        <section id="features-section" class="">
 
             <div class ="row">
 
@@ -109,7 +122,7 @@
                             <i class="fas fa-cheese fa-1x"></i>&nbsp;&nbsp;Locate nearest bakery and get ready to dig into delicious confectionaries.
                         </li>
                         <li>
-                            <i class="fas fa-star fa-1x"></i>&nbsp;&nbsp;We make sure that your dessert reach your doorstep.
+                            <i class="fas fa-sign-in-alt fa-1x"></i></i>&nbsp;&nbsp;We make sure that your dessert reach your doorstep.
                         </li>
                     </ul>
                     <!--<p class="one"><i class="far fa-handshake fa-2x"></i>Got some delicious dessert baking in the oven, and want others to taste? Join our website as seller.</p>
