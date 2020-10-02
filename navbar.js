@@ -1,7 +1,7 @@
-document.write( '<nav class=\"navbar navbar-expand-lg navbar-default\"> \n' );
+document.write( '<nav class=\"navbar navbar-expand-lg navbar-dark\"> \n' );
 //style=\"background-image: url(images/nav-bg.jpg);\"
-document.write( '    <a class=\"navbar-brand\" href=\"\">Whisked</a>\n' );
-document.write( '    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarTogglerDemo\">\n' );
+document.write( '    <a class=\"navbar-brand\" href=\"index.html\">Whisked</a>\n' );
+document.write( '    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarToggler\">\n' );
 document.write( '        <span class=\"navbar-toggler-icon\"></span>\n' );
 document.write( '    </button>\n' );
 document.write( '    <div class=\"collapse navbar-collapse\" id=\"navbarToggler\">\n' );

@@ -6,25 +6,31 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-
 .navbar-brand {
     font-size: 6rem;
     font-family: 'Rouge Script';
+    color: #ff1654 !important;
 }
+
+
 .nav-item{
     font-size: 24px;
     padding: 0.7em;
 }
-a.navbar-brand{
-    color:#ff1654;
-}
+
 .navbar-nav a{
-    color: #ff1654;
+    color: #ff1654 !important;
     transition: 0.3s;
 }
-    .navbar-nav a:hover{
-        color: #7d4f50;
-    }
+
+
+.navbar-nav a:hover{
+    color: #7d4f50 !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='rgba%28255, 22, 84, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
+}
 
 /** NAVBAR-END **/
 
@@ -46,3 +52,21 @@ a.navbar-brand{
 }
 
 /** footer end **/
+
+/* MEDIA QUERIES */
+
+
+@media only screen and (max-width: 950px) {
+
+    /* navbar */
+    .navbar {
+        padding: 1rem 1rem 1rem 2rem;
+    }
+
+
+    /* footer */
+    .list-inline-item {
+        padding: 1rem;
+    }
+
+}
