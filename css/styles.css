@@ -405,6 +405,32 @@ background-color: var(--bgMain-dark);
 }
 
 
+/*-----------------------------------------------------------------------------------*/
+
+/** SELL PAGE **/
+
+.sell-intro {
+    padding: 5% 15% 2%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.sell-form-div {
+    margin: 2rem 25% 3rem;
+    border-radius: 25px;
+    box-shadow: 0 0 25px 0 rgba(0,0,0,0.9);
+    background-color: #FFF3F3;
+    color: black;
+}
+
+.sell-form .btn {
+    margin: auto;
+}
+
+/** SELL PAGE END **/
+
+/*-----------------------------------------------------------------------------------*/
+
 /** MEDIA QUERIES **/
 
 @media only screen and (max-width: 950px) {
@@ -476,6 +502,21 @@ background-color: var(--bgMain-dark);
         padding: 10rem 2rem 0;
     }
 
+
+    /** SELL PAGE **/
+
+    .sell-intro {
+        padding: 5% 5% 2%;
+        font-size: 1.5rem;
+    }
+
+    .sell-form-div {
+        margin: 1rem 2% 1rem;
+    }
+
+
+    /** SELL PAGE END **/
+
 }
 
 
@@ -494,4 +535,17 @@ background-color: var(--bgMain-dark);
 
     /* INTRO SECTION END */
 
+    /** SELL PAGE **/
+
+    .sell-intro {
+        padding: 5% 7% 2%;
+        font-size: 1.5rem;
+    }
+
+    .sell-form-div {
+        margin: 1rem 5% 3rem;
+    }
+
+
+    /** SELL PAGE END **/
 }
