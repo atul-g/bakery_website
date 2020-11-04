@@ -549,3 +549,33 @@ background-color: var(--bgMain-dark);
 
     /** SELL PAGE END **/
 }
+
+  /* ABOUT US*/
+
+#about-us{
+padding: 5rem;
+}
+
+#about-us .row {
+    padding: 3rem 3rem 7rem 3rem;
+    margin-bottom: auto;
+}
+
+.about-us-para{
+padding:3rem;
+font-size:1.4rem;
+}
+
+.circles{
+padding:5rem;
+
+}
+
+.about-us-para .tagline{
+    color:var(--subText-yellow);
+    font-family: 'Rouge Script';
+    font-size: 6rem;
+    padding-bottom:0.5rem;
+}
+
+/*ABOUT US END*/
