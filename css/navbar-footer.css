@@ -1,15 +1,29 @@
+:root{
+    --bgMain :  #6d4546;
+    --bgMain-dark: #6e4546;
+    --sub-bg: #fff3f3;
+
+    --subText-pink: #ff1654  ;
+    --subText-yellow: #fff07c;
+}
+
 /** NAVBAR **/
 
 .navbar {
     padding: 1em 4em 1em 6em;
-    background-color: #fff3f3;
+    /* background-color: #fff3f3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     */
+     border-bottom: 1px solid transparent;
+    border-radius: 4px;
 }
 
 .navbar-brand {
     font-size: 6rem;
     font-family: 'Rouge Script';
-    color: #ff1654 !important;
+    color: var(--subText-yellow) !important;
+    /* color: #ff1654 !important; */
+
 }
 
 
@@ -19,13 +33,14 @@
 }
 
 .navbar-nav a{
-    color: #ff1654 !important;
+    /* color: #ff1654 !important; */
+    color: var(--sub-bg) !important;
     transition: 0.3s;
 }
 
 
 .navbar-nav a:hover{
-    color: #7d4f50 !important;
+    color: var(--subText-pink) !important;
 }
 
 .navbar-toggler-icon {
@@ -46,9 +61,12 @@
 .list-inline-item {
     padding: 2em;
 }
-
-.fab {
-    color: #ff1654;
+.list-inline-item a{
+    color: var(--subText-pink);
+    transition: 0.2s ease-in;
+}
+.list-inline-item a:hover{
+    color: var(--subText-yellow) !important;
 }
 
 /** footer end **/

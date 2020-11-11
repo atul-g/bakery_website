@@ -19,6 +19,30 @@ I might change the colour palette >_<
     --subText-yellow: #fff07c;
 }
 
+/** CUSTON SCROLL BAR **/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:var(--bgMain);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--sub-bg);
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
 /** INDEX PAGE  **/
 *{
     max-width: 100%;
@@ -125,7 +149,7 @@ form{
 /** intro section **/
 
 #intro-section {
-    padding: 5rem;
+    padding: 1rem 5rem 5rem 5rem;
     background-image: url('../images/flower-bg.jpg');
 }
 
@@ -255,16 +279,19 @@ form{
 }
 
 .parallax{
-    background-image: url('../images/wallBg.jpg');
+    background-image: url('../images/wallbg-2.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-/* #sales-carousel .carousel-inner{
-background-color: var(--bgMain-dark);
-} */
+.parallax-1{
+    background-image: url('../images/store-bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 #sales-carousel .carousel-item{
     width: 100%;
@@ -277,7 +304,15 @@ background-color: var(--bgMain-dark);
     border-radius: 10px;
     max-height:100%;
     margin: auto;
-    margin-left: 2em;
+    margin-left: 6em;
+    overflow:hidden;
+}
+#sales-carousel .carousel-item #ad2 img{
+    border: 4px solid #6e4546;
+    border-radius: 10px;
+    max-height:100%;
+    margin: auto;
+    margin-left: 9em;
     overflow:hidden;
 }
 
@@ -335,7 +370,7 @@ background-color: var(--bgMain-dark);
 }
 
 .card:hover{
-    box-shadow: 1px 13px 11px 0px rgba(0,0,0,0.48);
+    box-shadow:  0px 24px 28px 0px rgba(50, 50, 50, 0.79);
 }
 
 .card-img-top{
