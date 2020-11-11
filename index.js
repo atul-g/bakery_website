@@ -1,4 +1,3 @@
-
 // dynamically changing copyright year 
 currentYear = new Date().getFullYear();
 document.getElementsByClassName('footer-copyright')[0].innerText =  "© " + currentYear + " Copyright: Whisked"
@@ -24,7 +23,6 @@ $(document).scroll(function() {
         const opacity = +introVisible;
         $introSection.fadeTo(400, opacity);
     }
-
 
     if (!(y > 400 == featuresVisible))  { 
 
@@ -53,62 +51,62 @@ form.addEventListener('submit', function(e){
         e.preventDefault();
         checkUserInputs();
     }
-   
+
 });
 
-    function checkUserInputs(){
-        var flag=0;
-        const emailVal = email.value.trim();
-        const passwordVal = password.value.trim();
-        //validate email
-        if(emailVal === ''){
-            setErrorFor(email, 'Email required');
-        } else if(!isEmail(emailVal)){
-            setErrorFor(email, 'Wrong Email format');
-        } else {
-            setSuccessFor(email);
-            flag+=1;
-        }
-        //validate password
-        if (passwordVal === '') {
-            setErrorFor(password, 'Password required');
-        } else {
-            if(passwordVal.length <= 6){
-                setErrorFor(password, 'Password cannot be less than 6 characters');
-            }
-            else if (passwordVal.length > 20){
-                setErrorFor(password, 'Password cannot be more than 20 characters');
-            }
-            else{
-                setSuccessFor(password);
-                flag += 1;
-            } 
-        }
-        if(flag == 2)
-            checkError = 1;
-        else
-            checkError = 0;
-
+function checkUserInputs(){
+    var flag=0;
+    const emailVal = email.value.trim();
+    const passwordVal = password.value.trim();
+    //validate email
+    if(emailVal === ''){
+        setErrorFor(email, 'Email required');
+    } else if(!isEmail(emailVal)){
+        setErrorFor(email, 'Wrong Email format');
+    } else {
+        setSuccessFor(email);
+        flag+=1;
     }
-        //For error message
-        function setErrorFor(input, msg) {
-            const formGrp = input.parentElement; //.form-group
-            const sm = formGrp.querySelector('small');
-
-            sm.innerText = msg;
-
-            formGrp.className = 'form-group error';
-            
+    //validate password
+    if (passwordVal === '') {
+        setErrorFor(password, 'Password required');
+    } else {
+        if(passwordVal.length <= 6){
+            setErrorFor(password, 'Password cannot be less than 6 characters');
         }
-        //For Success Message
-        function setSuccessFor(input){
-            const formGrp = input.parentElement; //.form-group
-            formGrp.className = 'form-group success';
+        else if (passwordVal.length > 20){
+            setErrorFor(password, 'Password cannot be more than 20 characters');
         }
-        //Checks Email format
-        function isEmail(inputEmail){
-            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            return re.test(inputEmail);
-        }
+        else{
+            setSuccessFor(password);
+            flag += 1;
+        } 
+    }
+    if(flag == 2)
+        checkError = 1;
+    else
+        checkError = 0;
 
-    //Login Form Validation Ends
+}
+//For error message
+function setErrorFor(input, msg) {
+    const formGrp = input.parentElement; //.form-group
+    const sm = formGrp.querySelector('small');
+
+    sm.innerText = msg;
+
+    formGrp.className = 'form-group error';
+
+}
+//For Success Message
+function setSuccessFor(input){
+    const formGrp = input.parentElement; //.form-group
+    formGrp.className = 'form-group success';
+}
+//Checks Email format
+function isEmail(inputEmail){
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(inputEmail);
+}
+
+//Login Form Validation Ends

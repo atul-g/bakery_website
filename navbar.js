@@ -7,7 +7,7 @@ document.write( '    </button>\n' );
 document.write( '    <div class=\"collapse navbar-collapse\" id=\"navbarToggler\">\n' );
 document.write( '        <ul class=\"navbar-nav ml-auto\">\n' );
 document.write( '            <li class=\"nav-item\">\n' );
-document.write( '                <a class=\"nav-link\" href=\"#footer\">Sell</a>\n' );
+document.write( '                <a class=\"nav-link\" href=\"sell.html\">Sell</a>\n' );
 document.write( '            </li>\n' );
 document.write( '            <li class=\"nav-item\">\n' );
 document.write( '                <a class=\"nav-link\" href=\"stores.html\">Store</a>\n' );
